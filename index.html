@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfólio de Paulo Melo, desenvolvedor backend e estudante de Engenharia da Computação.">
+        <title> Paulo Melo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1> Portfólio - Paulo Melo</h1>
+        </header>
+
+        <main>
+            <section id="apresentacao">
+                <h2> Apresentação</h2>
+                    <p> Paulo Melo | Desenvolvedor Backend | Estudante de Engenharia da Computação</p>
+                    <p> Construo APIs robustas e sistemas que aplicam tecnologia para resolver problemas reais - de reabilitação assistida por visão computacional a análise geoespacial.</p>
+                    <a href="https://github.com/paulomelo0808/paulomelo0808" target="_blank" rel="noopener noreferrer"> GitHub</a> 
+                    <a href="mailto:paulomeloprogramador0808@gmail.com">Email</a>
+            </section>
+
+            <section id="sobre">
+                <h2> Sobre mim</h2>
+                    <p> Sou estudante de Engenharia da Compurtação na UNIFIP-Moc, em Montes Claros - MG, e atuo como desenvolvedor backend. Minha trajétoria passa por áreas diferentes, como:
+                        suporte técnico, geoprocessamento e desenvolvimento de sistemas. Isso me deu uma visão prática de como a tecnologia se conecta a problemas do mundo real.</p>
+                    <p> Hoje meu foco é aplicar conhecimentos de engenharia e computação para ajudar empresas e instituições a resolver desafios de processos, gestão e meio ambiente,
+                        sempre buscando soluções bem estruturadas e escaláveis.</p>
+                    <p> Na faculdade, no meu 5º periodo, liderei o desenvolvimento do Reabilita360, um projeto que nasceu como extensão universitária, com o intuito de ajudar idosos a realizar fisioterapia
+                        em casa com auxilio de visao computacinal.</p>
+            </section>
+
+            <section id="projetos">
+                <h2> Projetos</h2>
+                <article>
+                    <h3> Reabilita360</h3>
+                        <p> Esta API backend foi desenvolvida para uma aplicação de reabilitação fisioterapêutica voltada ao público idoso. 
+                            O sistema utiliza técnicas de visão computacional para acompanhar a execução dos exercícios em tempo real via câmera, 
+                            garantindo maior precisão e suporte ao tratamento.</p>
+                        <p> O projeto teve origem no meu 5º período da faculdade no contexto de um projeto de extensão universitária, 
+                            surgindo da união entre engenharia de software e tecnologia assistiva aplicada à saúde.</p>
+                        <p> Nesta iniciativa, atuei na liderança da equipe de estudantes e na condução técnica do desenvolvimento. 
+                            Fui responsável pela definição da arquitetura do backend, modelagem do banco de dados e estabelecimento das convenções 
+                            e boas práticas de código do projeto.</p>
+                        
+                        <img src="images/login-reabilita.png" alt="Tela de login do Reabilita360.">
+
+                        <p>Stack técnica:</p>
+                            <ul>
+                                <li> Fastify + TypeScript</li>
+                                <li> Prisma ORM + PostgreSQL</li>
+                                <li> Autenticação via JWT</li>
+                                <li> Validação de dados com Zod</li>
+                            </ul>
+                        
+                            <a href="https://github.com/paulomelo0808/reabilita360" target="_blank" rel="noopener noreferrer"> Github - Reabilida360</a>
+                        
+                            <a href="https://reabilita360-73j5.vercel.app/index.html" target="_blank" rel="noopener noreferrer"> Reabilida360</a>
+                </article>
+
+                <article> 
+                    <h3> BioVox</h3>
+                        <p> Este projeto foi desenvolvido durante o 6º período de graduação com o objetivo de promover a inclusão comunicativa de 
+                            pessoas diagnosticadas com doenças neuromusculares degenerativas. A proposta consiste em um sistema capaz de interpretar o sopro 
+                            do paciente como sinal de entrada primário, viabilizando a expressão de necessidades básicas e a interação com o ambiente.</p>
+                        <p> A partir do processamento desses estímulos de ar, o dispositivo converte os sinais captados em frases estruturadas de comunicação 
+                            e em comandos direcionados à automação residencial. A solução utiliza como base o microcontrolador ESP32, garantindo o 
+                            processamento em tempo real e a portabilidade necessária para o uso cotidiano do paciente.</p>
+                        <p> Minha contribuição no desenvolvimento abrangeu a concepção e estruturação da lógica de funcionamento do dispositivo, 
+                            além do desenvolvimento do firmware. Fui responsável pela codificação embarcada no ESP32, cobrindo desde a leitura e filtragem dos 
+                            sinais do sensor até o processamento responsável por traduzir os sopros nas ações correspondentes.</p>
+                            
+                            <img src="images/BioVox.jpeg" alt="Imagem do Biovox gerada por IA.">
+
+                        <p> Stack técnica: </p>
+                            <ul>
+                                <li> ESP32 + KY-038</li>
+                                <li> Linguagem C++ com as bibliotecas...</li>
+                                <li> Aplicativo em React-Native</li>
+                            </ul>
+                       
+                            <a href="https://github.com/paulomelo0808/biovox" target="_blank" rel="noopener noreferrer">GitHub - BioVox</a>
+                </article>
+            </section>
+
+            <section id="habilidades">
+                <h2>Habilidades Técnicas</h2>
+                <ul>
+                    <li> Frontend: JavaScrip, TypeScript, HTML5, CSS3</li>
+                    <li> Backend: Node.js, Fastify, Prisma ORM, APIs RESTful, JWT e Zod</li>
+                    <li> Banco de dados: PostgreSQL, PostGIS, MySQL</li>
+                    <li> Sistemas Embarcados e IoT: ESP32, C/C++ Embarcado, Sensores e Atuadores</li>
+                    <li> Geoprocessamento e Análise de Dados: QGIS, ArcGIS, Python, Geopandas, Rasterio, R</li>
+                    <li> Ferramentas e Versionamento: Git, GitHub, Postman</li>
+                </ul>
+            </section>
+
+            <section id="formacao">
+                <h2> Formação e Experiências</h2>
+                <article>
+                    <p>Engenharia da Computação - UNIFIP-Moc, Montes Claros-MG(em andamento)</p>
+                </article>
+
+                <article>
+                    <p>Experiências:</p>
+                    <ul>
+                        <li> Suporte Técnico: </li>
+                        <li> Geoprocessamento: </li>
+                    </ul>
+                </article>
+
+            </section>
+
+        </main>
+
+    </body>
+</html>
