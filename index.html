@@ -3,118 +3,243 @@
     <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfólio de Paulo Melo, desenvolvedor backend e estudante de Engenharia da Computação.">
+        <meta name="description" content="Portfólio de Paulo Melo, estudante de Engenharia da Computação, com projetos de visão computacional, 
+    geoprocessamento e sistemas embarcados.">
         <title> Paulo Melo</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
+
         <header>
-            <h1> Portfólio - Paulo Melo</h1>
+            <nav>
+                <a href="#hero" class="logo">Paulo Melo</a>
+                <ul class="nav-links">
+                    <li> <a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main>
-            <section id="apresentacao">
-                <h2> Apresentação</h2>
-                    <p> Paulo Melo | Desenvolvedor Backend | Estudante de Engenharia da Computação</p>
-                    <p> Construo APIs robustas e sistemas que aplicam tecnologia para resolver problemas reais - de reabilitação assistida por visão computacional a análise geoespacial.</p>
-                    <a href="https://github.com/paulomelo0808/paulomelo0808" target="_blank" rel="noopener noreferrer"> GitHub</a> 
-                    <a href="mailto:paulomeloprogramador0808@gmail.com">Email</a>
+            <section id="hero">
+                <div class="hero-texto">
+                    <h1>Paulo Melo</h1>
+                        <p class="subtitle">Engenharia da Computação</p>
+                        <p class="tagline">Tecnologia | Dados | Geoprocessamento</p>
+                    
+                    <div class="cta-group">
+                        <a href="https://github.com/paulomelo0808" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/paulo-melo0808" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                        <a href="https://wa.me/qr/FVPTWACVYSUKJ1" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                        <a href="mailto:paulomelo0808@gmail.com">Email</a></div>
+                </div>
+                
+                <div class="hero-foto">
+                    <img src="images/perfil.jpg" alt="Foto de Paulo Melo">
+                </div>
             </section>
 
+
             <section id="sobre">
-                <h2> Sobre mim</h2>
-                    <p> Sou estudante de Engenharia da Compurtação na UNIFIP-Moc, em Montes Claros - MG, e atuo como desenvolvedor backend. Minha trajétoria passa por áreas diferentes, como:
-                        suporte técnico, geoprocessamento e desenvolvimento de sistemas. Isso me deu uma visão prática de como a tecnologia se conecta a problemas do mundo real.</p>
-                    <p> Hoje meu foco é aplicar conhecimentos de engenharia e computação para ajudar empresas e instituições a resolver desafios de processos, gestão e meio ambiente,
-                        sempre buscando soluções bem estruturadas e escaláveis.</p>
-                    <p> Na faculdade, no meu 5º periodo, liderei o desenvolvimento do Reabilita360, um projeto que nasceu como extensão universitária, com o intuito de ajudar idosos a realizar fisioterapia
-                        em casa com auxilio de visao computacinal.</p>
+                <h2> Sobre</h2>
+                    <p class="destaque">"Transformo problemas reais em soluções suando programação, dados espacias,
+                        automação e tecnologia."</p>
+                    <p> Sou estudante de Engenharia da Computação, interessado em desenvolver soluções que conectem software, dados e o mundo físico.</p>
+                    <p> Tenho experiência e prática com programação, suporte a sistemas, geoprocessamento, sensoriamento remoto e ferraomentas como Python, QGIS e ArcGis.</p>
+                    <p> Atualmente busco aprofundar meus conhecimentos em desenvolvimento de sistemas, inteligência artificial, análise de dados e aplicações de engenharia.</p>
             </section>
 
             <section id="projetos">
                 <h2> Projetos</h2>
+
+
                 <article>
-                    <h3> Reabilita360</h3>
-                        <p> Esta API backend foi desenvolvida para uma aplicação de reabilitação fisioterapêutica voltada ao público idoso. 
-                            O sistema utiliza técnicas de visão computacional para acompanhar a execução dos exercícios em tempo real via câmera, 
-                            garantindo maior precisão e suporte ao tratamento.</p>
-                        <p> O projeto teve origem no meu 5º período da faculdade no contexto de um projeto de extensão universitária, 
-                            surgindo da união entre engenharia de software e tecnologia assistiva aplicada à saúde.</p>
-                        <p> Nesta iniciativa, atuei na liderança da equipe de estudantes e na condução técnica do desenvolvimento. 
-                            Fui responsável pela definição da arquitetura do backend, modelagem do banco de dados e estabelecimento das convenções 
-                            e boas práticas de código do projeto.</p>
-                        
+                    <h3>Reabilida360</h3>
+                        <p class="projeto-categoria"> Visão Computacional & IA</p>
+
                         <img src="images/login-reabilita.png" alt="Tela de login do Reabilita360.">
 
-                        <p>Stack técnica:</p>
-                            <ul>
-                                <li> Fastify + TypeScript</li>
-                                <li> Prisma ORM + PostgreSQL</li>
-                                <li> Autenticação via JWT</li>
-                                <li> Validação de dados com Zod</li>
-                            </ul>
-                        
-                            <a href="https://github.com/paulomelo0808/reabilita360" target="_blank" rel="noopener noreferrer"> Github - Reabilida360</a>
-                        
-                            <a href="https://reabilita360-73j5.vercel.app/index.html" target="_blank" rel="noopener noreferrer"> Reabilida360</a>
+                        <h4> Problema</h4>
+                            <p> Como utilizar visão computacional para auxiliar a execução de exercícios de fisioterapia?</p>
+                        <h4> Solução</h4>
+                            <p> Sistema capaz de utilizar uma câmera para analisar movimentos corporais e identificar padrões de execução dos exercícios,
+                                transformando os movimentos capturados em dados que podem ser analisados pelo sistema.</p>
+                            <p> A aplicação detecta e acompanha pontos do corpo durante a execução dos movimentos, permitindo avaliar posicionamento, trajétoria
+                                e execução do exercício.</p>
+
+                        <h4> Tecnologias</h4>
+                            <p> <strong>Python .  Visão Computacional . Inteligencia Artificial . Processamento de Imagens</strong></p>
+
+                        <h4> Resultado</h4>
+                            <p> Protótipo funcional para análise de movimentos por demio de câmera, servindo como aplicação prática dos conceitos de visão computacional e 
+                                inteligência artificial.</p>
+
+                                <div class="projeto-links">
+                                    <a href="https://github.com/paulomelo0808/reabilita360" target="_blank" rel="noopener noreferrer"> Github - Reabilida360</a>
+                                    <a href="https://reabilita360-73j5.vercel.app/index.html" target="_blank" rel="noopener noreferrer"> Reabilida360</a>
+                                </div>
                 </article>
 
-                <article> 
-                    <h3> BioVox</h3>
-                        <p> Este projeto foi desenvolvido durante o 6º período de graduação com o objetivo de promover a inclusão comunicativa de 
-                            pessoas diagnosticadas com doenças neuromusculares degenerativas. A proposta consiste em um sistema capaz de interpretar o sopro 
-                            do paciente como sinal de entrada primário, viabilizando a expressão de necessidades básicas e a interação com o ambiente.</p>
-                        <p> A partir do processamento desses estímulos de ar, o dispositivo converte os sinais captados em frases estruturadas de comunicação 
-                            e em comandos direcionados à automação residencial. A solução utiliza como base o microcontrolador ESP32, garantindo o 
-                            processamento em tempo real e a portabilidade necessária para o uso cotidiano do paciente.</p>
-                        <p> Minha contribuição no desenvolvimento abrangeu a concepção e estruturação da lógica de funcionamento do dispositivo, 
-                            além do desenvolvimento do firmware. Fui responsável pela codificação embarcada no ESP32, cobrindo desde a leitura e filtragem dos 
-                            sinais do sensor até o processamento responsável por traduzir os sopros nas ações correspondentes.</p>
-                            
-                            <img src="images/BioVox.jpeg" alt="Imagem do Biovox gerada por IA.">
-
-                        <p> Stack técnica: </p>
-                            <ul>
-                                <li> ESP32 + KY-038</li>
-                                <li> Linguagem C++ com as bibliotecas...</li>
-                                <li> Aplicativo em React-Native</li>
-                            </ul>
-                       
-                            <a href="https://github.com/paulomelo0808/biovox" target="_blank" rel="noopener noreferrer">GitHub - BioVox</a>
+                <article class="projeto">
+                    <h3>Análise Espacial e Mapeamento</h3>
+                        <p class="projeto-categoria"> Geoprocessamento</p>
+                        <img src="images/PLACEHOLDER-mapa.png" alt="[a preencher: mapa temático do projeto]">
+                        <h4>Problema</h4>
+                            <p><!-- a preencher --></p>
+ 
+                        <h4>Solução</h4>
+                            <p><!-- a preencher --></p>
+ 
+                        <h4>Tecnologia</h4>
+                            <p><strong>Python · QGIS · ArcGIS · Sensoriamento Remoto</strong></p>
+                    
+                        <h4>Resultado</h4>
+                            <p><!-- a preencher --></p>
+ 
+                        <div class="projeto-links">
+                            <!-- <a href="..." target="_blank" rel="noopener noreferrer">GitHub</a> -->
+                        </div>
                 </article>
+
+                <article class="projeto">
+                    <h3>Pluviômetro IoT</h3>
+                        <p class="projeto-categoria">IoT / Sistemas Embarcados</p>
+
+                        <img src="images/PLACEHOLDER-pluviometro.png" alt="[a preencher: foto do dispositivo ou dashboard]">
+
+                        <h4>Problema</h4>
+                             <p><!-- a preencher --></p>
+ 
+                        <h4>Solução</h4>
+                            <p>ESP32 + sensor de chuva, com coleta, transmissão e armazenamento de dados.</p>
+ 
+                        <h4>Tecnologia</h4>
+                            <p><strong>ESP32 · C/C++ Embarcado · Banco de Dados · Dashboard</strong></p>
+ 
+                        <h4>Resultado</h4>
+                            <p><!-- a preencher --></p>
+ 
+                        <div class="projeto-links">
+                            <!-- <a href="..." target="_blank" rel="noopener noreferrer">GitHub</a> -->
+                        </div>
+                </article>
+                
+                 <article class="projeto">
+                        <h3>Projeto BioVox</h3>
+                    <p class="projeto-categoria">Em desenvolvimento</p>
+ 
+                            <h4>Problema</h4>
+                                <p><!-- a preencher --></p>
+ 
+                            <h4>Solução</h4>
+                                <p><!-- Descreva o que o sistema faz e resolve, evite frases como "projeto feito para a disciplina X" --></p>
+ 
+                            <h4>Tecnologia</h4>
+                                <p><strong><!-- a preencher --></strong></p>
+                    
+                            <h4>Resultado</h4>
+                                <p><!-- a preencher --></p>
+ 
+                            <div class="projeto-links">
+                                <!-- <a href="..." target="_blank" rel="noopener noreferrer">GitHub</a> -->
+                              </div>
+                </article>
+
+                        
+
             </section>
 
             <section id="habilidades">
                 <h2>Habilidades Técnicas</h2>
-                <ul>
-                    <li> Frontend: JavaScrip, TypeScript, HTML5, CSS3</li>
-                    <li> Backend: Node.js, Fastify, Prisma ORM, APIs RESTful, JWT e Zod</li>
-                    <li> Banco de dados: PostgreSQL, PostGIS, MySQL</li>
-                    <li> Sistemas Embarcados e IoT: ESP32, C/C++ Embarcado, Sensores e Atuadores</li>
-                    <li> Geoprocessamento e Análise de Dados: QGIS, ArcGIS, Python, Geopandas, Rasterio, R</li>
-                    <li> Ferramentas e Versionamento: Git, GitHub, Postman</li>
-                </ul>
+                    
+                    <div class="skills-grupo">
+                        <h3>IA & Análise de Dados</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>R</li>
+                                <li>Visão Computacional</li>
+                                <li>Processamento de Imagens</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                    </div>
+
+                     <div class="skills-grupo">
+                        <h3>Geoespacial</h3>
+                            <ul>
+                                <li>QGIS</li>
+                                 <li>ArcGIS</li>
+                                 <li>Sensoriamento Remoto</li>
+                                 <li>Geoprocessamento</li>
+                                 <li>PostGIS</li>
+                            </ul>
+                    </div>
+
+                    <div class="skills-grupo">
+                        <h3>Desenvolvimento Web</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                            </ul>
+                    </div>
+
+                    <div class="skills-grupo">
+                        <h3>Embarcados</h3>
+                            <ul>
+                                <li>C/C++</li>
+                                <li>ESP32</li>
+                                <li>Sensores</li>
+                                <li>Eletroeletrônica</li>
+                            </ul>
+                    </div>
+            </section>
+
+            <section id="experiencia">
+                <h2>Experiência</h2>
+
+                    <article>
+                        <h3>Estagiário de Geoprocessamento - AVTec</h3>
+                            <p class="periodo"> 2026 </p>
+                            <p>Atuação com processamento e análise de dados geoespaciais, elaboração de mapas e utilização de ferramentas de 
+                                geoprocessamento e sensoriamento remoto.</p>
+                    </article>
+
+                    <article>
+                        <h3>Suporte Técnico - M3Soft Sistemas</h3>
+                            <p class="periodo"> 2024 - 2025</p>
+                            <p> Atuação direta na análise, triagem e solução de chamados de suporte técnico para usuários finais dos sistemas. 
+                                Identificação de falhas de software, orientação técnica sobre funcionalidades, documentação de ocorrências e comunicação 
+                                ativa com os desenvolvedores para resolução de bugs e melhorias.</p>
+                    </article>
             </section>
 
             <section id="formacao">
-                <h2> Formação e Experiências</h2>
-                <article>
-                    <p>Engenharia da Computação - UNIFIP-Moc, Montes Claros-MG(em andamento)</p>
-                </article>
+                <h2>Formação</h2>
+                    <article>
+                        <h3>Engenharia da Computação</h3>
+                            <p>UNIFIP-Moc, Montes Claros-MG (em andamento)</p>
+                    </article>
+            </section>
 
-                <article>
-                    <p>Experiências:</p>
-                    <ul>
-                        <li> Suporte Técnico: </li>
-                        <li> Geoprocessamento: </li>
-                    </ul>
-                </article>
-
+            <section id="contato">
+                <h2>Entre em contato</h2>
+                    <div class="contato-links">
+                        
+                        
+                    </div>
             </section>
 
         </main>
+
+        <footer>
+            Paulo Melo - 2026
+        </footer>
 
     </body>
 </html>
